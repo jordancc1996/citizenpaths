@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for Helicon View inspired colors */
+:root {
+  --brand-dark-gray: #2a2a2a;
+  --brand-medium-gray: #4a4a4a;
+  --brand-light-gray: #666666;
+  --brand-very-light-gray: #f5f5f5;
+  --brand-white: #ffffff;
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--brand-dark-gray);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Custom component styles */
+@layer components {
+  .hero-section {
+    @apply bg-gradient-to-br from-brand-medium-gray to-brand-dark-gray text-brand-white;
+  }
+  
+  .form-card {
+    @apply bg-brand-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto;
+  }
+  
+  .section-header {
+    @apply text-xl font-crimson font-semibold text-brand-dark-gray mb-6 pb-2 border-b-2 border-brand-light-gray;
+  }
+  
+  .form-input {
+    @apply w-full px-4 py-3 bg-brand-very-light-gray border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-light-gray focus:border-transparent transition-all duration-200;
+  }
+  
+  .form-input:focus {
+    @apply bg-white;
+  }
+  
+  .primary-button {
+    @apply bg-brand-dark-gray text-brand-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-brand-medium-gray transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-light-gray focus:ring-offset-2;
+  }
+  
+  .secondary-button {
+    @apply bg-brand-dark-gray text-brand-white border border-brand-dark-gray px-6 py-3 rounded-md font-medium hover:bg-brand-medium-gray hover:text-brand-white transition-all duration-200;
+  }
+  
+  .program-card {
+    @apply bg-brand-white border border-gray-200 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-200;
+  }
+  
+  .program-rank {
+    @apply inline-flex items-center justify-center w-8 h-8 bg-brand-dark-gray text-brand-white rounded-full text-sm font-semibold;
+  }
+  
+  .highlight-badge {
+    @apply inline-block bg-brand-very-light-gray text-brand-dark-gray px-3 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .loading-spinner {
+    @apply animate-spin rounded-full h-8 w-8 border-b-2 border-brand-dark-gray;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form-card {
+    @apply p-6 mx-4;
+  }
+  
+  .hero-section {
+    @apply py-12;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
