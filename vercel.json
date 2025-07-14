@@ -6,7 +6,7 @@
   "outputDirectory": ".next",
   "functions": {
     "src/pages/api/**/*.ts": {
-      "runtime": "nodejs18.x"
+      "runtime": "nodejs18"
     }
   },
   "rewrites": [
