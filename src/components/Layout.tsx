@@ -49,7 +49,7 @@ const Layout: React.FC<LayoutProps> = ({
               CitizenPaths
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-              Discover Your Optimal Citizenship by Investment Path
+              Discover Your Optimal Citizenship by Investment Path in seconds with AI
             </p>
           </div>
         </header>
@@ -63,7 +63,7 @@ const Layout: React.FC<LayoutProps> = ({
         <footer className="bg-brand-dark-gray text-brand-white py-8 mt-16">
           <div className="container mx-auto px-4 text-center">
             <p className="text-gray-300">
-              © 2024 CitizenPaths. Professional citizenship by investment guidance.
+              © 2025 CitizenPaths. Professional citizenship by investment guidance powered by AI and advanced real time data.
             </p>
             <p className="text-sm text-gray-400 mt-2">
               AI-powered recommendations • Real-time program data • Expert analysis
