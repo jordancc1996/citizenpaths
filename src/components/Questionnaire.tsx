@@ -119,7 +119,7 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ onSubmit, loading, error 
           <h3 className="section-header">Investment & Financial Factors</h3>
           <div className="space-y-4">
             <div className="flex flex-wrap items-center gap-2">
-              <span className="text-gray-700">I'm prepared to invest</span>
+              <span className="text-gray-700">I am prepared to invest</span>
               <input
                 type="text"
                 name="investment_amount"
