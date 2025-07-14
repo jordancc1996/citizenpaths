@@ -204,7 +204,7 @@ const Questionnaire: React.FC<QuestionnaireProps> = ({ onSubmit, loading, error 
                 name="family_inclusion"
                 value={formData.family_inclusion}
                 onChange={handleInputChange}
-                placeholder="need/prefer/don't need"
+                placeholder="need/prefer/don&apos;t need"
                 className="form-input flex-1 min-w-[200px]"
                 disabled={loading}
               />
